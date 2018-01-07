@@ -1,0 +1,14 @@
+connections:
+  _default:
+    driver_class_name: com.mysql.jdbc.Driver
+    url: 'jdbc:mysql://localhost/testdb'
+    username: root
+    # password: YouMayWantToUseAPassword
+    connection_test_query: SELECT 1
+    required_libraries:
+      - 'mysql:mysql-connector-java:jar:6.0.6'
+    properties:
+      cachePrepStmts: true
+      useServerPrepStmts: true
+      prepStmtCacheSqlLimit: 2048
+

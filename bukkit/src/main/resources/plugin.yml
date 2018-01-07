@@ -1,0 +1,12 @@
+name: CV-Database
+main: de.mccityville.lib.database.bukkit.plugin.DatabasePlugin
+version: ${project.version}
+depend: [ MCCV-LibManager ]
+
+commands:
+  dbtest:
+    permission: cvdb.command.test
+    description: Test database connectivity
+  dbstats:
+    permission: cvdb.command.stats
+    description: Get database pool statistics
